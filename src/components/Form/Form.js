@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FormField from './FormField';
 import './Form.css';
 import image from './assets/bond_approve.jpg';
 
@@ -45,7 +46,46 @@ export default class Form extends Component {
                 ) : (
                     <form className="form" onSubmit={this.handleSubmit}>
                         <h1>Введите свои данные, агент</h1>
-                        <p className="field">
+                        <FormField
+                            inputType="text"
+                            fieldName="Имя"
+                            inputClass="firstname"
+                            inputName="firstName"
+                            inputValue={firstName}
+                            handleChange={this.handleChange}
+                            submited={submited}
+                            fieldValue={firstName}
+                            emptyName="Нужно указать имя"
+                            wrongName="Имя указано не верно"
+                            check="james"
+                        />
+                        <FormField
+                            inputType="text"
+                            fieldName="Фамилия"
+                            inputClass="lastname"
+                            inputName="lastName"
+                            inputValue={lastName}
+                            handleChange={this.handleChange}
+                            submited={submited}
+                            fieldValue={lastName}
+                            emptyName="Нужно указать фамилию"
+                            wrongName="Фамилия указана не верно"
+                            check="bond"
+                        />
+                        <FormField
+                            inputType="password"
+                            fieldName="Пароль"
+                            inputClass="password"
+                            inputName="passwordField"
+                            inputValue={passwordField}
+                            handleChange={this.handleChange}
+                            submited={submited}
+                            fieldValue={passwordField}
+                            emptyName="Нужно указать пароль"
+                            wrongName="Пароль указан не верно"
+                            check="007"
+                        />
+                        {/* <p className="field">
                             <label htmlFor="firstName" className="field__label"><span className="field-label">Имя</span></label>
                             <input
                                 type="text"
@@ -63,8 +103,8 @@ export default class Form extends Component {
                                     }
                                 })()}
                             </span>
-                        </p>
-                        <p className="field">
+                        </p> */}
+                        {/* <p className="field">
                             <label htmlFor="lastName" className="field__label"><span className="field-label">Фамилия</span></label>
                             <input
                                 type="text"
@@ -84,7 +124,7 @@ export default class Form extends Component {
                             </span>
                         </p>
                         <p className="field">
-                            <label htmlFor="password" className="field__label"><span className="field-label">Пароль</span></label>
+                            <label htmlFor="passwordField" className="field__label"><span className="field-label">Пароль</span></label>
                             <input
                                 type="password"
                                 className="field__input field-input t-input-password"
@@ -101,7 +141,7 @@ export default class Form extends Component {
                                     }
                                 })()}
                             </span>
-                        </p>
+                        </p> */}
                         <div className="form__buttons">
                             <input type="submit" className="button t-submit" value="Проверить"/>
                         </div>
