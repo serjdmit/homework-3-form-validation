@@ -85,63 +85,6 @@ export default class Form extends Component {
                             wrongName="Пароль указан не верно"
                             check="007"
                         />
-                        {/* <p className="field">
-                            <label htmlFor="firstName" className="field__label"><span className="field-label">Имя</span></label>
-                            <input
-                                type="text"
-                                className="field__input field-input t-input-firstname"
-                                name="firstName"
-                                value={firstName}
-                                onChange={this.handleChange}/>
-                            <span className="field__error field-error t-error-firstname">
-                                {(function(){
-                                    if (submited && firstName === '') {
-                                        return 'Нужно указать имя'
-                                    }
-                                    if (submited && firstName.toLowerCase() !== 'james') {
-                                        return 'Имя указано не верно'
-                                    }
-                                })()}
-                            </span>
-                        </p> */}
-                        {/* <p className="field">
-                            <label htmlFor="lastName" className="field__label"><span className="field-label">Фамилия</span></label>
-                            <input
-                                type="text"
-                                className="field__input field-input t-input-lastname"
-                                name="lastName"
-                                value={lastName}
-                                onChange={this.handleChange}/>
-                            <span className="field__error field-error t-error-lastname">
-                                {(function () {
-                                    if (submited && lastName === '') {
-                                        return 'Нужно указать фамилию'
-                                    }
-                                    if (submited && lastName.toLowerCase() !== 'bond') {
-                                        return 'Фамилия указана не верно'
-                                    }
-                                })()}
-                            </span>
-                        </p>
-                        <p className="field">
-                            <label htmlFor="passwordField" className="field__label"><span className="field-label">Пароль</span></label>
-                            <input
-                                type="password"
-                                className="field__input field-input t-input-password"
-                                name="passwordField"
-                                value={passwordField}
-                                onChange={this.handleChange}/>
-                            <span className="field__error field-error t-error-password">
-                                {(function () {
-                                    if (submited && passwordField === '') {
-                                        return 'Нужно указать пароль'
-                                    }
-                                    if (submited && passwordField !== '007') {
-                                        return 'Пароль указан не верно'
-                                    }
-                                })()}
-                            </span>
-                        </p> */}
                         <div className="form__buttons">
                             <input type="submit" className="button t-submit" value="Проверить"/>
                         </div>
